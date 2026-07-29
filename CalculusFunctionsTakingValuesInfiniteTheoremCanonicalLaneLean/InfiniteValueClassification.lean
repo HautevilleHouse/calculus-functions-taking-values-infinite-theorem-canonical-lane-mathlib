@@ -1,0 +1,15 @@
+import calculusFunctionsTakingValuesInfiniteTheoremCanonicalLaneLean.ExtendedRealFunctions
+
+namespace HautevilleHouse
+namespace CalculusFunctionsTakingValuesInfiniteTheoremCanonicalLaneLean
+
+structure InfiniteValueClassificationPackage where
+  functionTakesInfiniteValue : Prop
+  infiniteValueSetMeasureZero : Prop
+  classificationClosed : functionTakesInfiniteValue ∧ infiniteValueSetMeasureZero
+
+def InfiniteValueClassificationClosed (P : InfiniteValueClassificationPackage) : Prop :=
+  P.functionTakesInfiniteValue ∧ P.infiniteValueSetMeasureZero
+
+end CalculusFunctionsTakingValuesInfiniteTheoremCanonicalLaneLean
+end HautevilleHouse
